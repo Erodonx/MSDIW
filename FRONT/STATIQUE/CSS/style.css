@@ -12,9 +12,10 @@ a:hover{
  transform:scale(1.1);
 }
 #card_putin:hover{
--ms-transform:scale(4);
--webkit-transform: scale(4);
-transform:scale(4);
+background-color: red !important;
+-ms-transform:scale(1.8);
+-webkit-transform: scale(1.8);
+transform:scale(1.8);
 }
 #card_putin{
     transition: transform 18s;
