@@ -6,5 +6,3 @@ verification.addEventListener("mouseover" , (e) => {
 verification.addEventListener("mouseout" , (e) => {
     poutine.innerHTML='';
 });
-
-window.alert('ok');
