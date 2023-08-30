@@ -12,9 +12,9 @@ a:hover{
  transform:scale(1.1);
 }
 #card_putin:hover{
--ms-transform:scale(1.8);
--webkit-transform: scale(1.8);
-transform:scale(1.8);
+-ms-transform:scale(4);
+-webkit-transform: scale(4);
+transform:scale(4);
 }
 #card_putin{
     transition: transform 18s;
