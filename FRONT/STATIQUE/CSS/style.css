@@ -11,3 +11,11 @@ a:hover{
  -webkit-transform: scale(1.1);
  transform:scale(1.1);
 }
+#card_putin:hover{
+-ms-transform:scale(2);
+-webkit-transform: scale(2);
+transform:scale(10);
+}
+#card_putin{
+    transition: transform 30s;
+}
