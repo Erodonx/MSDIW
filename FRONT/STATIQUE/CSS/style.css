@@ -1,3 +1,8 @@
+.parallax{
+    background-attachment: fixed;
+    background-size:cover;
+    background-image: url(../BOOTSTRAP/Assets/food/resized/itachi-and-kisame-in-the-rain.jpg);
+}
 a:hover{
     text-decoration: none;
 }
