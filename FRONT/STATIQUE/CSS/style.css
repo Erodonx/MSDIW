@@ -1,3 +1,21 @@
+.logo{
+    max-width: 150px;
+}
+.redlogo{
+    background-color : #970747;
+}
+.redsocials{
+    background-color:rgba(100, 5, 52); height:40px;
+}
+.background{
+    background-image: url('/FRONT/STATIQUE/BOOTSTRAP/Assets/bg.jpg');
+    min-height: 100px; 
+    max-height:200px;
+
+}
+.searchbar{
+    min-width:400px;
+}
 .parallax{
     background-attachment: fixed;
     background-size:cover;
@@ -29,4 +47,7 @@ animation: rotate 5s linear infinite; animation-delay: 0s;}
 }
 #card_putin{
     transition: transform 18s;
+}
+.commands{
+    bottom:0; right:0;
 }
