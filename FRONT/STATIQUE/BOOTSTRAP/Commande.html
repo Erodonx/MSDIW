@@ -51,26 +51,27 @@
         <div class="row background">
         </div>
         <div class="row align-self-center d-flex justify-content-center" style="background-color: aliceblue;">
-            <form id="form1" name="form1" method="post">
+            <form class="w-75 m-5" id="form1" name="form1" method="post">
                 <!--onsubmit="return checkForm(this);"-->
 
                 <div class="row">
                     <div class="col-12">
-                        <label for="nomprenom">Nom et prénom</label><br><input type="text" name="nomprenom"
-                            id="nomprenom" placeholder="Marc Dubois" style="width: 100%;">
+                        <label for="nomprenom">Nom et prénom</label><br><input class="w-100" type="text" name="nomprenom"
+                            id="nomprenom" placeholder="Marc Dubois">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
-                <label for="Email">Email</label><br><input type="text" id="email" placeholder="Durecommedubois@afpa.fr"></div>
+                <label for="Email">Email</label><br><input class="w-100" type="text" id="email" placeholder="Durecommedubois@afpa.fr"></div>
                 <div class="col-6">
-                <label for="Téléphone">Téléphone</label><input type="text" id="telephone" placeholder="0X.XX.XX.XX.XX"></div>
+                <label for="Téléphone">Téléphone</label><input class="w-100" type="text" id="telephone" placeholder="0X.XX.XX.XX.XX"></div>
             </div>
                 <div class="row">
                 <label for="adresse">Votre adresse</label>
-                <textarea id="adresse"> </textarea><br>
+                </div>
+                <div class="row">
+                <textarea class="w-100" id="adresse"> </textarea>
             </div>
-
                 <input type="submit" value="Envoyer" id="idSubForm1" name="subForm1">
                 <input type="reset" value="Annuler">
         </div>
