@@ -39,11 +39,29 @@ background-color: red !important;
 -ms-transform:scale(1.8);
 -webkit-transform: scale(1.8);
 transform:scale(1.8);
-animation: rotate 5s linear infinite; animation-delay: 0s;}
+animation: rotate 100s linear infinite; animation-delay: 0s;}
     @keyframes rotate {
         0% {rotate: 0deg;}
         100% {rotate: 360deg;}
     
+}
+#plat{
+    display:none;
+}
+#platcol{
+    display:none;
+}
+#platcolpoutine{
+    display:none;
+}
+#formplat{
+    display:none;
+}
+#nonpoutine{
+    display:none;
+}
+#poutine{
+    display:none;
 }
 #card_putin{
     transition: transform 18s;

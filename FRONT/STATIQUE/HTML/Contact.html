@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid parallax">
+        <header>
+            <div class="row redlogo">
+                <div class="col-4">
+                    <img src="../BOOTSTRAP/Assets/Logos/logo.png" class="img-fluid rounded logo">
+                </div>
+                <div class="col-8 align-self-center justify-content-end d-flex">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <!-- <a class="navbar-brand" href="#"></a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Accueil.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Catégorie.html">Catégorie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Plat</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link disabled" href="#">Contact<span
+                                        class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                            <!--  -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="row align-self-center d-flex justify-content-center" style="background-color: aliceblue;">
+            <form class="w-75 m-5" id="form1" name="form1" method="post">
+                <!--onsubmit="return checkForm(this);"-->
+
+                <div class="row pt-5">
+                    <div class="col-6">
+                        <label for="nom">Nom</label><br><input class="w-100" type="text" name="nom" id="nom"
+                            placeholder="Marc">
+                    </div>
+                    <div class="col-6">
+                        <label for="prenom">Prénom</label><br><input class="w-100" type="text" name="prenom" id="prenom"
+                            placeholder="Dubois">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-6">
+                        <label for="Email">Email</label><br><input class="w-100" type="text" id="email"
+                            placeholder="Durecommedubois@afpa.fr">
+                    </div>
+                    <div class="col-6">
+                        <label for="Téléphone">Téléphone</label><input class="w-100" type="text" id="telephone"
+                            placeholder="0X.XX.XX.XX.XX">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <label for="adresse">Votre demande</label>
+                </div>
+                <div class="row pb-5">
+                    <textarea class="w-100" id="adresse"> </textarea>
+                </div>
+                <input type="submit" value="Envoyer" id="idSubForm1" name="subForm1">
+                <input type="reset" value="Annuler">
+        </div>
+        <footer>
+            <div class="row redsocials">
+                <div class="col-12 align-self-center">
+                    <ul class="list-inline justify-content-center mb-0 d-flex">
+                        <li class="list-inline-item"><a href="https://twitter.com/?lang=fr">
+                                <img src="../BOOTSTRAP/Assets/Logos/twitter.png" width="20" height="20" class="rounded"
+                                    alt="twitter">
+                            </a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://fr-fr.facebook.com/">
+                                <img src="../BOOTSTRAP/Assets/Logos/Facebook.jpg" width="20" height="20" class="rounded"
+                                    alt="facebook">
+                            </a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/">
+                                <img src="../BOOTSTRAP/Assets/Logos/Instagram.png" width="20" height="20" class="rounded"
+                                    alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="../Javascript/Javascript.js"></script>
+</body>
+
+</html>
