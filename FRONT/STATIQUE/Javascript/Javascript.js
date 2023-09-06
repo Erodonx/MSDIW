@@ -16,8 +16,22 @@ let h3c=document.getElementById('h3c');
 let h4i=document.getElementById('h4i');
 let h4p=document.getElementById('h4p');
 let h4c=document.getElementById('h4c');
-let background=document.getElementById('background');
+let sp1i=document.getElementById('sp1i');
+let sp1p=document.getElementById('sp1p');
+let sp1c=document.getElementById('sp1c');
+let sp2i=document.getElementById('sp2i');
+let sp2p=document.getElementById('sp2p');
+let sp2c=document.getElementById('sp2c');
+let sp3i=document.getElementById('sp3i');
+let sp3p=document.getElementById('sp3p');
+let sp3c=document.getElementById('sp3c');
+let sp4i=document.getElementById('sp4i');
+let sp4p=document.getElementById('sp4p');
+let sp4c=document.getElementById('sp4c');
+let background=document.getElementById('platbg');
 let hamburgertext=document.getElementById('hamburgertext');
+let spetext=document.getElementById('spetext');
+let spe=document.getElementById('spe');
 let hamburger=document.getElementById('hamburger');
 let hamburgercarousel=document.getElementById('hamburgercarousel');
 let plat=document.getElementById('plat');
@@ -58,6 +72,8 @@ h1c.addEventListener('click', (e) => {
 background.style.display='none';
 hamburger.style.display='none';
 hamburgercarousel.style.display='none';
+spe.style.display='none';
+spetext.style.display='none';
 hamburgertext.style.display='none';
 formplat.style.display='flex';
 plat.style.display='flex';
@@ -73,6 +89,8 @@ h2c.addEventListener('click', (e) => {
     hamburger.style.display='none';
     hamburgercarousel.style.display='none';
     hamburgertext.style.display='none';
+    spe.style.display='none';
+spetext.style.display='none';
     formplat.style.display='flex';
     plat.style.display='flex';
     platcol.style.display='flex';
@@ -85,6 +103,8 @@ h2c.addEventListener('click', (e) => {
         background.style.display='none';
         hamburger.style.display='none';
         hamburgercarousel.style.display='none';
+        spe.style.display='none';
+spetext.style.display='none';
         hamburgertext.style.display='none';
         formplat.style.display='flex';
         plat.style.display='flex';
@@ -99,6 +119,8 @@ h2c.addEventListener('click', (e) => {
             hamburger.style.display='none';
             hamburgercarousel.style.display='none';
             hamburgertext.style.display='none';
+            spe.style.display='none';
+            spetext.style.display='none';
             formplat.style.display='flex';
             plat.style.display='flex';
             platcol.style.display='flex';
@@ -108,6 +130,68 @@ h2c.addEventListener('click', (e) => {
             putine2.innerHTML='<audio src="../BOOTSTRAP/Assets/son/balade.mp3" autoplay loop></audio>';
             Commande(platImage,platDesc);
             });
+
+            sp1c.addEventListener('click', (e) => {
+                background.style.display='none';
+                hamburger.style.display='none';
+                hamburgercarousel.style.display='none';
+                spe.style.display='none';
+                spetext.style.display='none';
+                hamburgertext.style.display='none';
+                formplat.style.display='flex';
+                plat.style.display='flex';
+                platcol.style.display='flex';
+                nonpoutine.style.display='flex';
+                platImage=sp1i.src;
+                platDesc= sp1p.innerHTML;
+                nonpoutine.display='flex';
+                Commande(platImage,platDesc);
+                });
+                sp2c.addEventListener('click', (e) => {
+                    background.style.display='none';
+                    hamburger.style.display='none';
+                    hamburgercarousel.style.display='none';
+                    hamburgertext.style.display='none';
+                    spe.style.display='none';
+                spetext.style.display='none';
+                    formplat.style.display='flex';
+                    plat.style.display='flex';
+                    platcol.style.display='flex';
+                    nonpoutine.style.display='flex';
+                    platImage=sp2i.src;
+                    platDesc= sp2p.innerHTML;
+                    Commande(platImage,platDesc);
+                    });
+                    sp3c.addEventListener('click', (e) => {
+                        background.style.display='none';
+                        hamburger.style.display='none';
+                        hamburgercarousel.style.display='none';
+                        spe.style.display='none';
+                spetext.style.display='none';
+                        hamburgertext.style.display='none';
+                        formplat.style.display='flex';
+                        plat.style.display='flex';
+                        platcol.style.display='flex';
+                        nonpoutine.style.display='flex';
+                        platImage=sp3i.src;
+                        platDesc= sp3p.innerHTML;
+                        Commande(platImage,platDesc);
+                        });
+                        sp4c.addEventListener('click', (e) => {
+                            background.style.display='none';
+                            hamburger.style.display='none';
+                            hamburgercarousel.style.display='none';
+                            hamburgertext.style.display='none';
+                            spe.style.display='none';
+                spetext.style.display='none';
+                            formplat.style.display='flex';
+                            plat.style.display='flex';
+                            platcol.style.display='flex';
+                            nonpoutine.style.display='flex';
+                            platImage=sp4i.src;
+                            platDesc= sp4p.innerHTML;
+                            Commande(platImage,platDesc);
+                            })
     
 function stopPoutine(){
     if (putine2.innerHTML==''){

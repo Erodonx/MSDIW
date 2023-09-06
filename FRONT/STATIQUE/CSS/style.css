@@ -45,6 +45,9 @@ animation: rotate 100s linear infinite; animation-delay: 0s;}
         100% {rotate: 360deg;}
     
 }
+#platbg{
+    height: 134px;
+}
 #plat{
     display:none;
 }
