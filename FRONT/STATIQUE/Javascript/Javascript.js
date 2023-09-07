@@ -196,7 +196,10 @@ spetext.style.display='none';
 function stopPoutine(){
     if (putine2.innerHTML==''){
         putine2.innerHTML='<audio src="../BOOTSTRAP/Assets/son/balade.mp3" autoplay loop></audio>';
+        lienplatpoutine.src='../BOOTSTRAP/Assets/gif/wide-putin-awokenRes.gif';
     }else{
-        putine2.innerHTML=''; 
+        putine2.innerHTML='';
+        lienplatpoutine.src='../BOOTSTRAP/Assets/food/resized/Food-Name-433.png';
+
     }
 }
