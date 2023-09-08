@@ -1,4 +1,3 @@
-var normal = document.getElementById('normal');
 let s1i = document.getElementById('s1i');
 let s1p = document.getElementById('s1p');
 let s1c = document.getElementById('s1c');
@@ -66,10 +65,8 @@ s1c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = s1i.src;
     platDesc = s1p.innerHTML;
-    normal.display = 'flex';
     Commande(platImage, platDesc);
 });
 s2c.addEventListener('click', (e) => {
@@ -84,7 +81,6 @@ s2c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = s2i.src;
     platDesc = s2p.innerHTML;
     Commande(platImage, platDesc);
@@ -101,7 +97,6 @@ s3c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = s3i.src;
     platDesc = s3p.innerHTML;
     Commande(platImage, platDesc);
@@ -118,7 +113,6 @@ s4c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.disp
     platImage = s4i.src;
     platDesc = s4p.innerHTML;
     Commande(platImage, platDesc);
@@ -136,7 +130,6 @@ sp1c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = sp1i.src;
     platDesc = sp1p.innerHTML;
     Commande(platImage, platDesc);
@@ -153,7 +146,6 @@ sp2c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = sp2i.src;
     platDesc = sp2p.innerHTML;
     Commande(platImage, platDesc);
@@ -170,7 +162,6 @@ sp3c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = sp3i.src;
     platDesc = sp3p.innerHTML;
     Commande(platImage, platDesc);
@@ -187,7 +178,6 @@ sp4c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = sp4i.src;
     platDesc = sp4p.innerHTML;
     Commande(platImage, platDesc);
@@ -204,7 +194,6 @@ pa1c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = pa1i.src;
     platDesc = pa1p.innerHTML;
     Commande(platImage, platDesc);
@@ -221,7 +210,6 @@ pa2c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = pa2i.src;
     platDesc = pa2p.innerHTML;
     Commande(platImage, platDesc);
@@ -238,7 +226,6 @@ pa3c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = pa3i.src;
     platDesc = pa3p.innerHTML;
     Commande(platImage, platDesc);
@@ -255,7 +242,6 @@ pa4c.addEventListener('click', (e) => {
     formplat.style.display = 'flex';
     plat.style.display = 'flex';
     platcol.style.display = 'flex';
-    normal.style.display = 'flex';
     platImage = pa4i.src;
     platDesc = pa4p.innerHTML;
     Commande(platImage, platDesc);
