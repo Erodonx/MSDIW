@@ -36,9 +36,9 @@ a:hover{
 }
 #card_putin:hover{
 background-color: red !important;
--ms-transform:scale(1.8);
--webkit-transform: scale(1.8);
-transform:scale(1.8);
+-ms-transform:scale(2);
+-webkit-transform: scale(2);
+transform:scale(2);
 animation: rotate 18s linear infinite; animation-delay: 0s;}
     @keyframes rotate {
         0% {rotate: 0deg;}
