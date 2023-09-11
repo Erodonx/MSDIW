@@ -285,7 +285,7 @@ pa4c.addEventListener('click', (e) => {
     platImage = pa4i.src;
     platDesc = pa4p.innerHTML;
     Commande(platImage, platDesc);
-})
+});
 
 function stopPoutine() {
     if (putine2.innerHTML == '') {

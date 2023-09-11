@@ -1,40 +1,30 @@
 var filtre = new RegExp("^[A-Za-z]+$");
+var filtrenp=new RegExp("^[A-Za-z]+ +[A-Za-z]+$");
 var filtretel = new RegExp("^[0-9]{10}$");
 var filtremail= new RegExp("^[A-Za-z0-9.-]+@[A-Za-z0-9.-]{2,}.[A-Za-z]{2,4}$");
 let form=document.getElementById('form1');
-let defaultname=document.getElementById('defaultname');
+let defaultname=document.getElementById('defaultnp');
 let defaultmail=document.getElementById('defaultmail');
-let defaultprenom=document.getElementById('defaultprenom');
 let defaultnumero=document.getElementById('defaultnumero');
-let defaultdemande=document.getElementById('defaultdemande');
+let defaultadresse=document.getElementById('defaultadresse');
 
 
 form.addEventListener('submit' , (e) => {
-    defaultname.innerHTML="";
+    defaultnp.innerHTML="";
     defaultmail.innerHTML="";
-    defaultprenom.innerHTML="";
     defaultnumero.innerHTML="";
-    defaultdemande.innerHTML="";
+    defaultadresse.innerHTML="";
 
-    if (form.elements['nom'].value ==='' || form.elements['nom']== null)
+    if (form.elements['np'].value ==='' || form.elements['np']== null)
     {
-        defaultname.innerHTML = "* veuillez indiquer votre nom  <br>";
+        defaultnp.innerHTML = "* veuillez indiquer votre nom  <br>";
         e.preventDefault();
         
-    }else if (filtre.test(form.elements['nom'].value)==false)
+    }else if (filtrenp.test(form.elements['np'].value)==false)
     {
-        defaultname.innerHTML = "* veuillez saisir correctement votre nom  <br>";
+        defaultnp.innerHTML = "* veuillez saisir correctement votre nom  <br>";
         e.preventDefault();
         
-    }
-        if (form.elements['prenom'].value=='')
-    {
-        defaultprenom.innerHTML = "* veuillez saisir votre prénom  <br>";
-        e.preventDefault();
-    } else if (filtre.test(form.elements['prenom'].value)==false)
-    {
-        defaultprenom.innerHTML = "* veuillez saisir correctement votre prénom  <br>";
-        e.preventDefault();
     }
     if(form.elements['email'].value=='')
     {
@@ -45,9 +35,9 @@ form.addEventListener('submit' , (e) => {
         defaultmail.innerHTML = "* veuillez saisir correctement votre e mail  <br>";
         e.preventDefault();
     }
-    if (form.elements['demande'].value=='')
+    if (form.elements['adresse'].value=='')
     {
-        defaultdemande.innerHTML = "* veuillez renseigner la demande  <br>";
+        defaultadresse.innerHTML = "* veuillez renseigner l'adresse  <br>";
         e.preventDefault();
     }
     if (form.elements['telephone'].value=='')
