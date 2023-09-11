@@ -17,12 +17,12 @@ form.addEventListener('submit' , (e) => {
 
     if (form.elements['np'].value ==='' || form.elements['np']== null)
     {
-        defaultnp.innerHTML = "* veuillez indiquer votre nom  <br>";
+        defaultnp.innerHTML = "* veuillez indiquer votre nom et votre prénom  <br>";
         e.preventDefault();
         
     }else if (filtrenp.test(form.elements['np'].value)==false)
     {
-        defaultnp.innerHTML = "* veuillez saisir correctement votre nom  <br>";
+        defaultnp.innerHTML = "* veuillez saisir correctement le champ demandé !<br>";
         e.preventDefault();
         
     }

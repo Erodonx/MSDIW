@@ -392,30 +392,27 @@
 
                 <div class="row pt-5">
                     <div class="col-12">
-                        <label for="nomprenom">Nom et prénom</label><br><input class="w-100" type="text"
-                            name="nomprenom" id="nomprenom" placeholder="Marc Dubois">
+                        <label for="np">Nom et prénom</label><br><input class="w-100" type="text" name="nomprenom"
+                            id="np" placeholder="Marc Dubois">
+                            <span class="text-danger" id="defaultnp"></span>
                     </div>
                 </div>
                 <div class="row pt-5">
                     <div class="col-6">
-                        <label for="Email">Email</label><br><input class="w-100" type="text" id="email"
-                            placeholder="Durecommedubois@afpa.fr">
-                    </div>
-                    <div class="col-6">
-                        <label for="Téléphone">Téléphone</label><input class="w-100" type="text" id="telephone"
-                            placeholder="0X.XX.XX.XX.XX">
-                    </div>
-                </div>
+                <label for="Email">Email</label><br><input class="w-100" type="text" id="email" placeholder="Durecommedubois@afpa.fr">
+                <span class="text-danger" id="defaultmail"></span></div>
+                <div class="col-6">
+                <label for="Téléphone">Téléphone</label><input class="w-100" type="text" id="telephone" placeholder="0X.XX.XX.XX.XX">
+                <span class="text-danger" id="defaultnumero"></span></div>
+            </div>
                 <div class="row pt-5">
-                    <label for="adresse">Votre adresse</label>
+                <label for="adresse">Votre adresse</label>
                 </div>
                 <div class="row pb-5">
-                    <textarea class="w-100" id="adresse"> </textarea>
-                </div>
-                <div class="row pb-5">
+                <textarea class="w-100" id="adresse"> </textarea><span class="text-danger" id="defaultadresse"></span>
+            </div>
                 <input type="submit" value="Envoyer" id="idSubForm1" name="subForm1">
                 <input type="reset" value="Annuler">
-            </div>
         </div>
         <footer>
             <div class="row redsocials">
@@ -452,6 +449,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="../Javascript/Javascript_plat.js" defer></script>
+    <script src="../Javascript/Javascript_commande.js" defer></script>
 </body>
 
 </html>
