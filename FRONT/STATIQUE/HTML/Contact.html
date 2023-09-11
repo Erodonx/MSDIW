@@ -39,7 +39,7 @@
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link disabled" href="#">Contact<span
-                                        class="sr-only">(current)</span></a>
+                                            class="sr-only">(current)</span></a>
                                 </li>
                             </ul>
                             <!--  -->
@@ -56,30 +56,41 @@
                     <div class="col-6">
                         <label for="nom">Nom</label><br><input class="w-100" type="text" name="nom" id="nom"
                             placeholder="Marc">
+                        <span class="text-danger" id="defaultname"></span>
                     </div>
                     <div class="col-6">
                         <label for="prenom">Prénom</label><br><input class="w-100" type="text" name="prenom" id="prenom"
                             placeholder="Dubois">
+                        <span class="text-danger" id="defaultprenom"></span>
                     </div>
                 </div>
                 <div class="row pt-5">
                     <div class="col-6">
                         <label for="Email">Email</label><br><input class="w-100" type="text" id="email"
                             placeholder="Durecommedubois@afpa.fr">
+                        <span class="text-danger" id="defaultmail"></span>
                     </div>
                     <div class="col-6">
                         <label for="Téléphone">Téléphone</label><input class="w-100" type="text" id="telephone"
                             placeholder="0X.XX.XX.XX.XX">
+                        <span class="text-danger" id="defaultnumero"></span>
                     </div>
                 </div>
                 <div class="row pt-5">
-                    <label for="adresse">Votre demande</label>
+                    <label for="demande">Votre demande</label>
                 </div>
                 <div class="row pb-5">
-                    <textarea class="w-100" id="adresse"> </textarea>
+                    <textarea class="w-100" id="demande"> </textarea>
+                    <span class="text-danger" id="defaultdemande"></span>
                 </div>
-                <input type="submit" value="Envoyer" id="idSubForm1" name="subForm1">
-                <input type="reset" value="Annuler">
+                <div class="row pb-5">
+                    <div class="col-6 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-secondary btn-lg d-inline">Envoyer</button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <button type="reset" class="btn btn-secondary btn-lg d-inline">Annuler</button>
+                    </div>
+                </div>
         </div>
         <footer>
             <div class="row redsocials">
@@ -96,8 +107,8 @@
                             </a>
                         </li>
                         <li class="list-inline-item"><a href="https://www.instagram.com/">
-                                <img src="../BOOTSTRAP/Assets/Logos/Instagram.png" width="20" height="20" class="rounded"
-                                    alt="instagram">
+                                <img src="../BOOTSTRAP/Assets/Logos/Instagram.png" width="20" height="20"
+                                    class="rounded" alt="instagram">
                             </a>
                         </li>
                     </ul>
@@ -115,7 +126,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="../Javascript/Javascript.js"></script>
+    <script src="../Javascript/Javascript_contact.js"></script>
 </body>
 
 </html>
