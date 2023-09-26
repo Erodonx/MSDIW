@@ -21,7 +21,7 @@ $files[$key] = $f1 ;
 
 // use either ksort or krsort => (reverse order)
 //ksort($files);
-krsort($files);
+ksort($files);
 
 foreach ($files as $f1) {
 $thelist .= '<LI><a href="'.$f1.'">'.$f1.'</a>';
