@@ -10,10 +10,10 @@
 <body>
 <form action ="login_script.php" method="post"> 
 <label for="login">Login :</label><div class="input-group w-25">
-  <input type="text" class="form-control" placeholder="Login" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <input type="text" class="form-control" name="login" placeholder="Login" aria-label="Recipient's username" aria-describedby="basic-addon2">
 </div><br>
         <label for="password">Password :</label><div class="input-group w-25">
-  <input type="password" id="survol" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <input type="password" name="password" id="survol" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
   <div class="input-group-append">
     <button class="btn btn-outline-secondary" id="button"type="button">A</button>
   </div>
