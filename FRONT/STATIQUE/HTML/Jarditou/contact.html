@@ -53,30 +53,36 @@
             <legend>Vos coordonnées</legend>
             <label for="nom">Votre Nom* :</label><input type="text" name="nom" id="nom"> <br>
             <span class="text-danger" id="defaultname"></span>
-            <label for="prenom">Votre Prénom* :</label><input type="text" name="prenom" id="prenom"> <br> <br>
+            <label for="prenom">Votre Prénom* :</label><input type="text" name="prenom" id="prenom">
+            <br>
             <span class="text-danger" id="defaultprenom"></span>
             <label for="sexe">Sexe *:</label>
-            <span class="text-danger" id="defaultsexe"></span>
+            
                 <input type="radio"  id="feminin" name="sexe" value="Feminin">
                 <label for="feminin">Féminin</label>
                 <input type="radio" id="masculin" name="sexe" value="Masculin">
-                <label for="masculin">Masculin</label><br><br>
+                <label for="masculin">Masculin</label>
+                <br>
+                <span class="text-danger" id="defaultsexe"></span>
             <label for="date">Date de naissance* :</label>
-            <span class="text-danger" id="defaultdate"></span>
-                <input type="date" name="ddn" id="date"> <br>
+            
+                <input type="date" name="ddn" id="date"><br>
+                <span class="text-danger" id="defaultdate"></span> 
             <label for="codepostal">Code postal* :</label>
-            <span class="text-danger" id="defaultpostal"></span>
-                <input type="text" id="codepostal"> <br>
+            
+                <input type="text" id="codepostal"><br>
+                <span class="text-danger" id="defaultpostal"></span> 
             <label for="adresse">Adresse :</label>
                 <input type="text" id="adresse"> <br>
             <label for="ville">Ville :</label>
                 <input type="text" id="ville"> <br>
             <label for="email">Email* :</label>
-            <span class="text-danger" id="defaultmail"></span>
-                <input type="text" id="email" placeholder="dave.loper@afpa.fr"> <br>  
+            
+                <input type="text" id="email" placeholder="dave.loper@afpa.fr"><br>  
+                <span class="text-danger" id="defaultmail"></span> 
         <legend>Votre demande</legend>
         <label for="sujet">Sujet* :</label>
-        <span class="text-danger" id="defaultsujet"></span>
+        
             <select id="sujet">
                 <option value="">Veuillez selectionner un sujet</option>
                 <option value="commandes">Mes commandes</option>
@@ -84,18 +90,28 @@
                 <option value="reclamation">Réclamation</option>
                 <option value="autres">Autres</option>
 
-            </select> <br>
+            </select>
+            <br>
+            <span class="text-danger" id="defaultsujet"></span> 
+            
         <label for="question">Votre question* :</label>
-        <span class="text-danger" id="defaultquestion"></span>
             <textarea id="question"></textarea>
+            <br>
+            <span class="text-danger" id="defaultquestion"></span>
 
-        <input type="checkbox" name="accepter" value="accepter" id="accepter"><br><label for="accepter">* J'accepte le traitement informatique de ce formulaire</label> <br>
+            <br><input type="checkbox" name="accepter" value="accepter" id="accepter"><label for="accepter">* J'accepte le traitement informatique de ce formulaire</label> <br>
         <span class="text-danger" id="defaultaccepter"></span>
-        <input type="submit" value="Envoyer" id="idSubForm1" name="subForm1">
+        <input type="submit" value="Envoyer" id="bouton" name="subForm1">
         <input type="reset" value="Annuler">
 
 
     </form>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <button id="boutonzz">CLIQUE PAS!</button>
+    </div>
 </div>
     </div>
 
@@ -120,8 +136,9 @@
                 </ul>
             </div> 
     </nav>
-    </footer>
+    </footer> 
 </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

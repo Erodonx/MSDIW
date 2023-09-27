@@ -14,7 +14,20 @@ let defaultaccepter=document.getElementById('defaultaccepter');
 
 //document.querySelector('#form1').onsubmit = function(){
 //element.addEventListener("submit", checkForm);
-form.addEventListener('submit', (e) => {
+
+// $(document).ready(function()
+// {
+//     $("#boutonzz").click(function()
+//     {
+//         alert("woulah arrête stop c'est trop");
+//     });
+// });
+
+$(document).ready(function()
+{
+    $("#bouton").click(function(e)
+    {
+//form.addEventListener('submit', (e) => {
 
     defaultname.innerHTML="";
     defaultprenom.innerHTML="";
@@ -89,4 +102,5 @@ form.addEventListener('submit', (e) => {
         defaultaccepter.innerHTML = "* veuillez accepter le traitement informatique <br>";
         e.preventDefault();
     }
+});
 });
