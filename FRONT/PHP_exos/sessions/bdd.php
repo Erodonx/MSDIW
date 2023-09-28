@@ -31,7 +31,7 @@ foreach($ref as $key=>$value)
                     {
                      if ($value==$_REQUEST['mail'])
                      {
-                     $_SESSION['checkbdd']+=1;
+                     $_SESSION['checkbdd']-=1;
                      }
                     }
                     }
@@ -70,7 +70,8 @@ echo '<br>cliquez <a href="prototype.php"><input type="button" value="ici"></a>p
 
     }else
     {
-        echo '<br> login ou email déjà présente dans la base de donnée, veuillez vous réinscrire.';
+        echo '<br> login ou email déjà présente dans la base de donnée, si vous avez un soucis cherchez mot de passe oublié.';
+        header ("Refresh: 3;URL=login_form.php");
     }
 }else{
     echo 'You\'re not supposed to be here, heading you back to login_form';

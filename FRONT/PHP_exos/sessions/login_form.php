@@ -24,13 +24,13 @@
 </form>
 
 <a href="inscription.php"><input type="button" value="Inscription"></a>
-
+<a href="recup_pswd.php"><input type="button" value="mot de passe oublié"></a>
 <?php
 
 session_start();
 //if (!isset ($_SESSION['test']))
 //{
-/*   
+/* 
     $_SESSION['test']='V';
     $_SESSION['nbcompte']=0;
     $_SESSION['user']=array($_SESSION['nbcompte'] => array(['nom' => 'NA','prenom'=>'NA', 'mail' => 'NA', 'login' => 'admin' , 'password' => password_hash('admin',PASSWORD_DEFAULT)]));
@@ -65,8 +65,8 @@ foreach ($ref2 as $key => $value)
     }
     echo "<br>";
   }*/
- /* 
- $ref= file_get_contents('bdd.txt');
+ 
+ /*$ref= file_get_contents('bdd.txt');
  echo $ref;
  $ref=unserialize($ref);
  foreach ($ref as $key => $value)
