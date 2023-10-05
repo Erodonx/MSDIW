@@ -59,14 +59,12 @@ if ($testfinal==true)
     }
     if(is_array($value)){
         foreach ($value as $key => $value){
-            if (is_array($value)){
-                foreach ($value as $key => $value){
                     if ($key=='password')
                     {
                      if ($verif2==true)
                      {
                      echo $value;
-                     $ref[$_REQUEST['secret']][0]['password']=password_hash($_REQUEST['password'],PASSWORD_DEFAULT);
+                     $ref[$_REQUEST['secret']]['password']=password_hash($_REQUEST['password'],PASSWORD_DEFAULT);
                      echo $value;
                      $verif=false;
                      }
@@ -76,8 +74,6 @@ if ($testfinal==true)
             }
           
         }
-    }
-}
 ftruncate($fp,0);
 $ref=serialize($ref);
 fputs($fp,$ref);

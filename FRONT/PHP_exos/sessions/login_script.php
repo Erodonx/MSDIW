@@ -32,8 +32,6 @@ foreach($ref as $key=>$value)
 {
     if(is_array($value)){
         foreach ($value as $key => $value){
-            if (is_array($value)){
-                foreach ($value as $key => $value){
                     if ($key=='login')
                     {
                      if ($value==$_REQUEST['login'])
@@ -53,7 +51,6 @@ foreach($ref as $key=>$value)
                         $_SESSION['double']=0;
                     }
                     }
-                    }
                     
             }
             if($_SESSION['double']==2)
@@ -63,7 +60,6 @@ foreach($ref as $key=>$value)
           
         }
     }
-}
 if(($loginv==true)&&($authentif==false))
 {
  echo '<br> Mot de passe incorrect.';

@@ -1,0 +1,23 @@
+.poutine{
+    background-attachment: fixed;
+    background-size:cover;
+    background-image: url(wide-putin-awokenRes.gif);
+
+}
+input{
+    display: block;
+    box-sizing: border-box;
+    padding: .375rem .75rem;
+}
+img{
+    cursor: pointer;
+    background:#FFF;
+    border: royalblue;
+    border-radius: 15%;
+    border-width: 20px;
+}
+label{
+    font-family:'Lucida Sans';
+    font-size:x-large;
+    font-weight: bolder;
+}

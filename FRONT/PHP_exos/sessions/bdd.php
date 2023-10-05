@@ -5,6 +5,19 @@ $fp= fopen("bdd.txt", "a");
 $ref= file_get_contents('bdd.txt');
 echo $ref;
 $ref=unserialize($ref);
+if ($ref=="")
+{
+    $ref = array( array(
+        "nom" => "NA",
+        "prenom" => "NA",
+        "e-mail" => "NA",
+        "login" => "admin",
+        "password" => password_hash("admin",PASSWORD_DEFAULT)
+
+
+    ));
+}
+
 $_SESSION['checkbdd']=2;
 $_SESSION['nbcompte']=count($ref);
 echo "<br><br><br>".$_SESSION['nbcompte']."<br><br><br>";
@@ -17,8 +30,6 @@ foreach($ref as $key=>$value)
 {
     if(is_array($value)){
         foreach ($value as $key => $value){
-            if (is_array($value)){
-                foreach ($value as $key => $value){
                     if ($key=='login')
                     {
                      if ($value==$_REQUEST['login'])
@@ -26,40 +37,40 @@ foreach($ref as $key=>$value)
                      $_SESSION['checkbdd']-=1;
                      }
                     }
-                    }
-                    if ($key=='mail')
+                    if ($key=='e-mail')
                     {
                      if ($value==$_REQUEST['mail'])
                      {
                      $_SESSION['checkbdd']-=1;
-                     }
+                     } 
                     }
-                    }
-                    
-            }
             
         }
     }
+}
     if($_SESSION['checkbdd']==2)
     {
-        $ref+=array($_SESSION['nbcompte'] => array(['nom' => $_REQUEST['nom'],'prenom'=>$_REQUEST['prenom'], 'mail' => $_REQUEST['mail'], 'login' => $_REQUEST['login'] , 'password' => $_REQUEST['password']]));
+        array_push($ref, array(
+            "nom" => $_REQUEST['nom'],
+            "prenom" => $_REQUEST['prenom'],
+            "e-mail" => $_REQUEST['mail'],
+            "login" => $_REQUEST['login'],
+            "password" => password_hash($_REQUEST['password'],PASSWORD_DEFAULT)
+
+        ));
 
 foreach ($ref as $key => $value)
 {
-    echo $key .'<br>';
+    echo $key.' : ';
     if(is_array($value))
     {
         foreach($value as $key => $value){
-             if(is_array($value)){
-                foreach($value as $key => $value){
+
                      echo $key." : ".$value."<br>";
                 }
-        }
-        echo '<br>';
     }
     echo "<br>";
   }
-}
 
 ftruncate($fp,0);
 $ref=serialize($ref);

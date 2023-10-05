@@ -5,6 +5,7 @@ defaultlogin=document.getElementById('defaultlogin');
 defaultnom=document.getElementById('defaultnom');
 defaultprenom=document.getElementById('defaultprenom');
 defaultpassword=document.getElementById('defaultpassword');
+defaultverifpassword=document.getElementById('defaultverifpassword');
 defaultmail=document.getElementById('defaultmail');
 function complex_password(code)
 {
@@ -58,6 +59,7 @@ form.addEventListener('submit' , (e) => {
     defaultprenom.innerHTML="";
     defaultpassword.innerHTML="";
     defaultmail.innerHTML="";
+    defaultverifpassword.innerHTML="";
 
     if (form.elements['login'].value ==='' || form.elements['login']== null)
     {
@@ -108,4 +110,26 @@ form.addEventListener('submit' , (e) => {
         e.preventDefault();
         defaultmail.innerHTML="L'adresse mail n'est pas valide.";
     }
+    if (form.elements['password'].value!=form.elements['password-verif'].value)
+    {
+        e.preventDefault();
+        defaultverifpassword.innerHTML="Les deux mots de passe ne correspondent pas.";
+    }
+});
+volume=document.getElementById('volume');
+putine=document.getElementById('putine');
+//aled=document.getElementsByClassName('poutine');
+
+volume.addEventListener("click" , (e) => {
+    if (putine.innerHTML=='')
+    {
+        putine.innerHTML='<audio src="tests/balade.mp3" autoplay loop></audio>';
+        volume.src="tests/on.png";
+    }else
+    {
+        putine.innerHTML='';
+        volume.src="tests/off.png";
+    }
+   
+   
 });

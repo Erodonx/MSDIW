@@ -18,9 +18,6 @@ foreach($ref as $key=>$value)
 
         foreach ($value as $key => $value){
 
-            if (is_array($value)){
-                foreach ($value as $key => $value){
-
                     if ($key=='login')
                     {
                      if ($value==$_REQUEST['login'])
@@ -33,8 +30,6 @@ foreach($ref as $key=>$value)
             }
           
         }
-    }
-}
 if ($verif==false)
 {
     $keyCor=count($ref)-1;
