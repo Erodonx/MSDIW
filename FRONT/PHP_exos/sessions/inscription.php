@@ -28,13 +28,14 @@
            </div>
            <div class="col-4"></div>
            <div class="col-4 justify-content-center d-flex">
-            <button type="reset" class="btn btn-primary btn-lg">ANNULER</button>
+            <button type="reset" id="coin" class="btn btn-primary btn-lg">ANNULER</button>
            </div>
         </div>
 <div class="row d-flex justify-content-center">
 <img class="w-25" id="volume" src="tests/off.png">
 <span id="putine"></span>
 <span id="combien"></span>
+<span id="horn"></span>
 </div>
 </form>
 </div>

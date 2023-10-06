@@ -14,7 +14,7 @@
     <div class="container-fluid parallax">
       <div id="header"></div>
         <div class="row align-self-center d-flex justify-content-center bg-light">
-            <form class="w-75 m-5" id="form1" name="form1" method="post">
+            <form action="Contact.php" class="w-75 m-5" id="form1" name="form1" method="post">
                 <!--onsubmit="return checkForm(this);"-->
 
                 <div class="row pt-5">
@@ -31,12 +31,12 @@
                 </div>
                 <div class="row pt-5">
                     <div class="col-6">
-                        <label for="Email">Email</label><br><input class="w-100" type="text" id="email"
+                        <label for="Email">Email</label><br><input class="w-100" type="text" name="mail" id="email"
                             placeholder="Marcdubois@afpa.fr">
                         <span class="text-danger" id="defaultmail"></span>
                     </div>
                     <div class="col-6">
-                        <label for="Téléphone">Téléphone</label><input class="w-100" type="text" id="telephone"
+                        <label for="Téléphone">Téléphone</label><input class="w-100" type="text" name="telephone" id="telephone"
                             placeholder="0X.XX.XX.XX.XX">
                         <span class="text-danger" id="defaultnumero"></span>
                     </div>
@@ -45,7 +45,7 @@
                     <label for="demande">Votre demande</label>
                 </div>
                 <div class="row pb-5">
-                    <textarea class="w-100" id="demande"> </textarea>
+                    <textarea class="w-100" name="demande" id="demande"> </textarea>
                     <span class="text-danger" id="defaultdemande"></span>
                 </div>
                 <div class="row d-none d-lg-flex py-5">
@@ -66,6 +66,7 @@
         </div>
       <div id="footer"></div>
     </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -77,7 +78,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script> 
-    <script src="../Javascript/Javascript_contact.js"></script>
+    <script src="../Javascript/Javascript_contact.js" defer></script>
 </body>
-
 </html>
