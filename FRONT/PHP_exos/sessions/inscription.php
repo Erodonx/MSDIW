@@ -11,7 +11,7 @@
 <body>
 <div class="container-fluid bg-dark">
 <div class="row justify-content-center d-flex pt-3">
-<form class="col-9 text-primary poutine mx-5 my-5 px-5 py-5 align-items-center d-flex flex-column" action="bdd.php" id="form1" method="post">
+<form id="form1" style="" class="bg-warning col-9 text-primary poutine mx-5 my-5 px-5 py-5 align-items-center d-flex flex-column" action="bdd.php" id="form1" method="post">
 <label class="pt-3 justify-content-center d-flex" for="login">Login :</label><br><input class="pr-5 w-50 rounded border-primary" type="text" name="login" id="login"
                         placeholder="login">
                         <span class="text-danger" id="defaultlogin"></span><br>
@@ -34,6 +34,7 @@
 <div class="row d-flex justify-content-center">
 <img class="w-25" id="volume" src="tests/off.png">
 <span id="putine"></span>
+<span id="combien"></span>
 </div>
 </form>
 </div>
