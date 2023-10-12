@@ -67,66 +67,66 @@ form.addEventListener('submit' , (e) => {
     {
         e.preventDefault();
         defaultlogin.innerHTML="Veuillez saisir un login.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
     }else if (form.elements['login'].length<='8')
     {
         e.preventDefault();
         defaultlogin.innerHTML="Le login doit comporter au moins 8 caractères.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
         
     }
     if (form.elements['nom'].value ==='' || form.elements['nom']== null)
     {
         e.preventDefault();
         defaultnom.innerHTML="Veuillez renseigner un nom.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay looped></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
         
     }else if (filtre.test(form.elements['nom'].value)==false)
     {
         e.preventDefault();
         defaultnom.innerHTML="Veuillez renseigner un nom valide.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
     }
     if (form.elements['prenom'].value ==='' || form.elements['prenom']== null)
     {
         e.preventDefault();
         defaultprenom.innerHTML="Veuillez renseigner le prénom.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
         
     }else if (filtre.test(form.elements['prenom'].value)==false)
     {
         e.preventDefault();
         defaultprenom.innerHTML="Veuillez renseigner un prénom valide.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
     }
     if (form.elements['password'].value==='' || form.elements['password']==null)
     {
         e.preventDefault();
         defaultpassword.innerHTML="le mot de passe ne doit pas être vide.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
 
     }else if (verifpassword==false)
     {
         e.preventDefault();
         defaultpassword.innerHTML="Le mot de passe ne contient pas 8 caractères ainsi qu'une majuscule et une minuscule et un chiffre.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
     }
     if(form.elements['mail'].value=='')
     {
         e.preventDefault();
         defaultmail.innerHTML="Veuillez renseigner l'adresse mail.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
     }else if (filtremail.test(form.elements['mail'].value)==false)
     {
         e.preventDefault();
         defaultmail.innerHTML="L'adresse mail n'est pas valide.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
     }
     if (form.elements['password'].value!=form.elements['password-verif'].value)
     {
         e.preventDefault();
         defaultverifpassword.innerHTML="Les deux mots de passe ne correspondent pas.";
-        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        combien.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay></audio>';
     }
 });
 volume=document.getElementById('volume');
@@ -144,7 +144,7 @@ horn.innerHTML='';
 volume.addEventListener("click" , (e) => {
     if (putine.innerHTML=='')
     {
-        putine.innerHTML='<audio src="tests/COMBIEN.mp3" autoplay loop></audio>';
+        putine.innerHTML='<audio src="tests/balade.mp3" autoplay loop></audio>';
         volume.src="tests/on.png";
         form.style="background-image:url(wide-putin-awokenRes.gif);";
     }else
