@@ -352,6 +352,18 @@
                 </div>
             </div>
         </div>
+        <div class="row py-5" id="hamburgercarousel">
+            <div class="col-4 justify-content-left d-flex">
+                <a href="Plat.html">
+                    <button type="button" class="btn btn-secondary btn-lg" role="button">Précédent</button></a>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4 d-flex justify-content-end">
+                <a href="#">
+                <button type="button" class="btn btn-secondary btn-lg" role="button">Suivant</button>
+            </a>
+            </div>
+        </div>
         <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
