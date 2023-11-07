@@ -17,9 +17,6 @@ $.get("header.php",null, function( data )
 {
     $("#header").html(data);
 });
-
-
-
 });
 $(document).ready(function()
 {
